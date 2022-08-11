@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellowgreen;
+}
+
+.cards-block {
+    display: flex;
+    margin: auto
+}
+
+.card {
+    display: block;
+    justify-content: center;
+    height: 20vh;
+    width: 15vh;
+    padding: 20px;
+    align-content: center;
+    background-color: aqua;
+    border-radius: 1vh;
+    margin-top: 20px;
+    opacity: 0.8;
+    background: linear-gradient(135deg, #444cf755 25%, transparent 25%)
+     -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) 
+     -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%)
+      0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%)
+       0px 0/ 20px 20px;
+
+}
+
+.card:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5)
+}
+
+/* The Modal (background) */
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    font-size: larger;
+    text-align: center;
+    height: 10vh;
+    padding: 40px 0;
+}
+
+.modal-buttons {
+    float: right;
+}
+.btn {
+    height: 2rem;
+    width: 5rem;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+.red-btn {
+    background-color: lightsalmon;
+}
+.green-btn {
+    background-color: lightgreen;
+}
+
+.btn:hover, .btn:focus {
+    border: 2px solid;
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .modal-content {
+        width: 50%;
+        /* Could be more or less, depending on screen size */
+    }
+}
